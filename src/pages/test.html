@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase Connection Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+    <h2>Check Console for Supabase Connection</h2>
+
+    <script>
+        // Ensure everything loads first
+        document.addEventListener("DOMContentLoaded", async function () {
+            // ✅ Correctly defining supabase first
+            const SUPABASE_URL = "https://kzvtniajqclodwlokxww.supabase.co";
+            const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt6dnRuaWFqcWNsb2R3bG9reHd3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIzOTQyODUsImV4cCI6MjA1Nzk3MDI4NX0.Q2jWPiZFE371GJaKsPb92yFpLSshiT4laz3wT6gfr4M";
+
+            // ✅ Make sure supabase is created before using it
+            const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+            // ✅ Function to test connection
+            async function testConnection() {
+                const { data, error } = await supabase.from("medicine").select("*");
+
+                if (error) {
+                    console.error("❌ Connection failed:", error.message);
+                } else {
+                    console.log("✅ Connection successful! Sample data:", data);
+                }
+            }
+
+            // ✅ Call function after initialization
+            testConnection();
+        });
+    </script>
+</body>
+</html>

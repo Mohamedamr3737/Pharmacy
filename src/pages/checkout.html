@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Checkout Form</title>
+    <link rel="icon" href="https://assets.pharmeasy.in/apothecary/images/favicon.png">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha384-oSrq3BO+WAt0qGbyXMTYbg4JAmKJAP+a41f5NjWEXQjzM5mwIKR1yZlii1Q4LYkX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header bg-blue">
+        <nav class="navbar bg-blue">
+            <div class="container flex">
+                
+                <a href="https://moazmorsh.github.io/pharmacy-website-project/index.html" target="_self" class="logo">
+                    <i class="fa fa-medkit"></i> Meditrack
+                </a>
+                
+                <button type="button" class="navbar-show-btn">
+                    <img src="../assets/images/ham-menu-icon.png">
+                </button>
+
+                <div class="navbar-collapse bg-white">
+                    <button type="button" class="navbar-hide-btn">
+                        <img src="../assets/images/close-icon.png">
+                    </button>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="https://moazmorsh.github.io/pharmacy-website-project/index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"></li><a href="https://moazmorsh.github.io/pharmacy-website-project/index.html#services" class="nav-link">Subscription</a></li>
+                        <li class="nav-item"></li><a href="https://moazmorsh.github.io/pharmacy-website-project/index.html#banner-two" class="nav-link">Quick Order</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="cart.html" class="nav-link" id="cart-link"> Cart <span id="cart-counter">(0)</span>
+                        </a></li>
+                    </ul>
+                    <div class="search-bar">
+                        <form>
+                            <div class="search-bar-box flex">
+                                <span class="search-icon flex">
+                                    <img src="../assets/images/search-icon-dark.png">
+                                </span>
+                                <input type="search" class="search-control" placeholder="Search here">
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </header>
+    <!-- end of header -->
+
+    <main>
+        
+        <div class="wrapper">
+            <div class="payment">
+              <div class="payment-logo">
+                <p>p</p>
+              </div>
+              
+              
+              <h2>Payment Gateway</h2>
+              <div class="payment-form">
+                <div class="card space icon-relative">
+                  <label class="payment-label">Card holder:</label>
+                  <input type="text" class="payment-input" placeholder="Coding Market">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="card space icon-relative">
+                  <label class="payment-label">Card number:</label>
+                  <input type="text" class="payment-input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+                  <i class="far fa-credit-card"></i>
+                </div>
+                <div class="card-grp space">
+                  <div class="card-item icon-relative">
+                    <label class="payment-label">Expiry date:</label>
+                    <input type="text" name="expiry-data" class="payment-input" data-mask="00 / 00"  placeholder="00 / 00">
+                    <i class="far fa-calendar-alt"></i>
+                  </div>
+                  <div class="card-item icon-relative">
+                    <label class="payment-label">CVC:</label>
+                    <input type="text" class="payment-input" data-mask="000" placeholder="000">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                </div>
+                  
+                <div class="pay-btn">
+                  Pay
+                </div> 
+                <div class="pay-icons">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <!-- footer  -->
+ <footer id = "footer" class = "footer text-center">
+    <div class = "container">
+        <div class = "footer-inner text-white py grid">
+            <div class = "footer-item">
+                <h3 class = "footer-head">about us</h3>
+                <div class = "icon">
+                    <img src = "">
+                </div>
+                <p class = "text text-md">Meditrack is more than a service—it’s a commitment to your health. We ensure timely, reliable medicine deliveries, so you never have to worry about missing a dose!</p>
+                <ul>
+                    <h3 class="footer-head"></h3>
+                    <li>Order Medicine</li>
+                    <li>HealthCare Products</li>
+                    <li>Health Blog</li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h3 class = "footer-head">tags</h3>
+                <ul class = "tags-list flex">
+                    <li>COVID Essentials</li>
+                    <li>Personal Care</li>
+                    <li>Health Food & Drinks</li>
+                    <li>Supplements</li>
+                    <li>Mother & Baby Care</li>
+                    <li>Home Care</li>
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h3 class = "footer-head">Quick Links</h3>
+                <ul>
+                    <li><a href = "#" class = "text-white">Our Services</a></li>
+                    <li><a href = "#" class = "text-white">Our Plan</a></li>
+                    <li><a href = "#" class = "text-white">Privacy Policy</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class = "footer-item">
+                <h3 class = "footer-head">Make your first Order</h3>
+                <p class = "text text-md">Customer Support Here for You.</p>
+                <ul class = "appointment-info">
+                    <li>8:00 AM - 11:00 AM</li>
+                    <li>2:00 PM - 05:00 PM</li>
+                    <li>8:00 PM - 11:00 PM</li>
+                    <li>
+                        <i class = "fas fa-envelope"></i>
+                        <span>meditrack@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class = "fas fa-phone"></i>
+                        <span>+02 2411-5401</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "footer-links">
+            <ul class = "flex">
+                <li><a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
+                <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
+                <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- end of footer  -->
+
+    <script src="../assets/js/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+</html>

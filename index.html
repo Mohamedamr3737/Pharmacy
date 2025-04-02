@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTrack</title>
+    <link rel="icon" href="https://assets.pharmeasy.in/apothecary/images/favicon.png">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "src/assets/css/normalize.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "src/assets/css/main.css">
+</head>
+<body>
+    
+
+    <!-- header -->
+    <header class = "header bg-blue">
+        <nav class = "navbar bg-blue">
+            <div class = "container flex">
+                
+                <a href=""https://moazmorsh.github.io/pharmacy-website-project/index.html"" target="_self" class="logo">
+                    <i class="fa fa-medkit"></i> Meditrack
+                </a>
+                
+                <button type = "button" class = "navbar-show-btn">
+                    <img src = "src/assets/images/ham-menu-icon.png">
+                </button>
+
+                <div class = "navbar-collapse bg-white">
+                    <button type = "button" class = "navbar-hide-btn">
+                        <img src = "src/assets/images/close-icon.png">
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = ""https://moazmorsh.github.io/pharmacy-website-project/index.html"" target="_self" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#about" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#services" class = "nav-link">Service</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#banner-two" class = "nav-link">Quick Order</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#package-service" class = "nav-link">Subscription</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "src/pages/products.html" class = "nav-link">Products</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "src/pages/cart.html" class = "nav-link">Cart</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#contact" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="src/pages/admin.html" class="admin-icon" id="adminIcon" >  <!--style="display: none;"-->
+                        <i class="fa-solid fa-user-shield"></i> 
+                    </a>
+                    <div class = "search-bar">
+                        <form>
+                            <div class = "search-bar-box flex">
+                                <span class = "search-icon flex">
+                                    <img src = "src/assets/images/search-icon-dark.png">
+                                </span>
+                                <input type = "search" class = "search-control" placeholder="Search here">
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+
+        <div class = "header-inner text-white text-center">
+            <div class = "container grid">
+                <div class = "header-inner-left">
+                    <h1>your most trusted<br> <span>health partner</span></h1>
+                    <p class = "lead">the best match services for you</p>
+                    <p class = "text text-md">Meditrack, revolutionizing online pharmacy access with trust and efficiency. Seamless connections, secure healthcare, and effortless medicine delivery at your fingertips.</p>
+                    <div class = "btn-group">
+                        <a href = "#" class = "btn btn-white">Learn More</a>
+                        <a href = "src\pages\login.html" class = "btn btn-light-blue">Sign In</a>
+                    </div>
+                </div>
+                <div class = "header-inner-right">
+                    <img src = "src/assets/images/header.jpg.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <main>
+        <!-- about section -->
+        <section id = "about" class = "about py">
+            <div class = "about-inner">
+                <div class = "container grid">
+                    <div class = "about-left text-center">
+                        <div class = "section-head">
+                            <h2>About Us</h2>
+                            <div class = "border-line"></div>
+                        </div>
+                        <p class = "text text-lg">MediTrack revolutionizes the way you access medicine in Cairo, EG. Our innovative search engine connects you with local pharmacies, allowing you to check the availability of your required medications effortlessly. If your medicine is out of stock, we provide substitute suggestions to ensure you never miss a dose. Experience the convenience of MediTrack and take control of your health today!</p>
+                        <a href = "#" class = "btn btn-white">Learn More</a>
+                    </div>
+                    <div class = "about-right flex">
+                        <div class = "img">
+                            <img src = "src/assets/images/about2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+
+        <!-- banner one -->
+        <section id = "banner-one" class = "banner-one text-center">
+            <div class = "container text-white">
+                <blockquote class = "lead"><i class = "fas fa-quote-left"></i> When your desired medicine is out of stock, MediTrack has you covered with substitute suggestions. <i class = "fas fa-quote-right"></i></blockquote>
+                <small class = "text text-sm">- MediTrack Here for You!</small>
+            </div>
+        </section>
+        <!-- end of banner one -->
+
+        <!-- services section -->
+        <section id = "services" class = "services py">
+            <div class = "container">
+                <div class = "section-head text-center">
+                    <h2 class = "lead">The Best Pharmacy makes all medicines available</h2>
+                    <p class = "text text-lg">A perfect way to show your pharmacy services</p>
+                    <div class = "line-art flex">
+                        <div></div>
+                        <img src = "src/assets/images/4-dots.png">
+                        <div></div>
+                    </div>
+                </div>
+                <div class = "services-inner text-center grid">
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "src/assets/images/service-1.png">
+                        </div>
+                        <h3>Medicines</h3>
+                        <p class = "text text-sm">Explore our wide range of medicines, including prescription and over-the-counter medications, to support your health and well-being. From pain relief and cold remedies to chronic condition treatments, we provide trusted pharmaceutical solutions to meet your needs. Shop safely and conveniently with us.</p>
+                    </article>
+
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "src/assets/images/service-2.png">
+                        </div>
+                        <h3>HealthCare</h3>
+                        <p class = "text text-sm">Discover a wide range of skincare, personal care, and wellness products designed to nourish, protect, and enhance your daily routine for a healthier, more radiant you.</p>
+                    </article>
+
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "src/assets/images/service-3.png">
+                        </div>
+                        <h3>Health Blog</h3>
+                        <p class = "text text-sm">Explore expert insights, wellness tips, and the latest health trends to help you make informed decisions about your well-being and live a healthier, more balanced life.</p>
+                    </article>
+
+                    <article class = "service-item">
+                        <div class = "icon">
+                            <img src = "src/assets/images/service-4.png">
+                        </div>
+                        <h3>Supplements</h3>
+                        <p class = "text text-sm">Boost your health with our wide selection of high-quality supplements, including essential vitamins, minerals, and nutritional support tailored to enhance your energy, immunity, and overall wellness.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- end of services section -->
+
+        <!-- banner two section -->
+        <section id = "banner-two" class = "banner-two text-center">
+            <div class = "container grid">
+                <div class = "banner-two-left">
+                    <img src = "src/assets/images/banner-2XX.png">
+                </div>
+                <div class = "banner-two-right">
+                    <p class = "lead text-white">Order with prescription, Upload prescription and we will deliver your medicine.</p>
+                    <div class = "btn-group">
+                        <a href = "#" class = "btn btn-white">Learn More</a>
+                        <a href = "#" class = "btn btn-light-blue">Upload</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of banner two section -->
+
+        <!-- Partners section -->
+        <section id = "doc-panel" class = "doc-panel py">
+            <div class = "container">
+                <div class = "section-head">
+                    <h2>Our Partners</h2>
+                </div>
+
+                <div class = "doc-panel-inner grid">
+                    <div class = "doc-panel-item">
+                        <div class = "img flex">
+                            <img src = "src/assets/images/Hatem_Amerjpg.jpg" alt = "partner image">
+                            <div class = "info text-center bg-blue text-white flex">
+                                <p class = "lead">Hatem Amer</p>
+                                <p class = "text-lg">Associate Minister of Health</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "doc-panel-item">
+                        <div class = "img flex">
+                            <img src = "src/assets/images/Riad-Armanious.jpg" alt = "partner image">
+                            <div class = "info text-center bg-blue text-white flex">
+                                <p class = "lead">Riad Armanious</p>
+                                <p class = "text-lg">chief executive officer, Eva Pharma</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "doc-panel-item">
+                        <div class = "img flex">
+                            <img src = "src/assets/images/Ahmed_elsobky.png
+                            " alt = "partner image">
+                            <div class = "info text-center bg-blue text-white flex">
+                                <p class = "lead"> Ahmed Elsobky</p>
+                                <p class = "text-lg">Chairman of Board of Directors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of partners section -->
+
+        <!-- package services section -->
+        <section id = "package-service" class = "package-service py text-center">
+            <div class = "container">
+                <div class = "package-service-head text-white">
+                    <h2>Package Service</h2>
+                    <p class = "text text-lg">Become a +PLUS member<br>Save flat 5% discoount & enjoy free delivery with plus Membership</p>
+                    <a href = "#" class = "btn btn-light-blue">Subscribe</a>
+                </div>
+                <div class = "package-service-inner grid">
+                    <div class = "package-service-item bg-white">
+                        <div class = "icon flex">
+                            <i class = "fas fa-phone fa-2x"></i>
+                        </div>
+                        <h3>Call Case</h3>
+                        <p class = "text text-sm">Exclusive priority support for Plus Members. Instant access, seamless assistance, and dedicated care whenever you need it.</p>
+                        <a href = "#" class = "btn btn-blue">Read More</a>
+                    </div>
+
+                    <div class = "package-service-item bg-white">
+                        <div class = "icon flex">
+                            <i class = "fas fa-calendar-alt fa-2x"></i>
+                        </div>
+                        <h3>Timely Case</h3>
+                        <p class = "text text-sm">Reliable, scheduled medicine deliveries for chronic conditions—on time, every time.</p>
+                        <a href = "#" class = "btn btn-blue">Read More</a>
+                    </div>
+                    
+                    <div class = "package-service-item bg-white">
+                        <div class = "icon flex">
+                            <i class = "fas fa-comments fa-2x"></i>
+                        </div>
+                        <h3>Chat Case</h3>
+                        <p class = "text text-sm">Instant chat support for Plus Members—fast, reliable, and always here for you.</p>
+                        <a href = "#" class = "btn btn-blue">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of package services section -->
+
+        <!-- posts section -->
+        <section id = "posts" class = "posts py">
+            <div class = "container">
+                <div class = "section-head">
+                    <h2>What Our Customers Said</h2>
+                </div>
+                <div class = "posts-inner grid">
+                    <article class = "post-item bg-white">
+                        <div class = "img">
+                            <img src = "">
+                        </div>
+                        <div class = "content">
+                            <h4>The Egyptian Pharaoh.</h4>
+                            <p class = "text text-sm">The app is really wonderful. Being a Product Manager myself, I would say that the User experience (UI/UX) of the app is top notch (easy to use, simple and convenient).</p>
+                            <p class = "text text-sm">Coming to services and delivery, I would say Pharmeasy is doing a tremendous job even during this unprecedented pandemic situation.</p>
+                            <div class = "info flex">
+                                <small class = "text text-sm"><i class = "fas fa-clock"></i> October 27, 2022</small>
+                                <small class = "text text-sm"><i class = "fas fa-thumbs-up"></i> 5 Likes</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class = "post-item bg-white">
+                        <div class = "img">
+                            <img src = "">
+                        </div>
+                        <div class = "content">
+                            <h4>Manal Elkhayat.</h4>
+                            <p class = "text text-sm">Best service and app amongst all available. I have been using it for more than 3 years, and even during the pandemic, they have kept their standards high and are delivering the order within 24 hours.</p>
+                            <p class = "text text-sm"> Keep up the good work.</p>
+                            <div class = "info flex">
+                                <small class = "text text-sm"><i class = "fas fa-clock"></i> October 27, 2021</small>
+                                <small class = "text text-sm"><i class = "fas fa-thumbs-up"></i> 9 Likes</small>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class = "post-item bg-white">
+                        <div class = "img">
+                            <img src = "">
+                        </div>
+                        <div class = "content">
+                            <h4>Ahmed Khaled.</h4>
+                            <p class = "text text-sm">This app is a game changer for me. I am unable to go out always to buy medicinal products. MediTrack gives me the last liberty to shop essential healthcare products from home. The app is very user friendly and me being an elderly person do not find any difficulty in using it.</p>
+                            <p class = "text text-sm">They deliver well in time. Thanks😊</p>
+                            <div class = "info flex">
+                                <small class = "text text-sm"><i class = "fas fa-clock"></i> October 27, 2021</small>
+                                <small class = "text text-sm"><i class = "fas fa-thumbs-up"></i> 15 likes</small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- end of posts section -->
+
+        <!-- contact section -->
+        <section id = "contact" class = "contact py">
+            <div class = "container grid">
+                <div class = "contact-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1234567890!2d31.2134567890!3d30.0456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846c123456789%3A0xabcdef1234567890!2sCairo+Opera+House!5e0!3m2!1sen!2seg!4v1616161616161" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class = "contact-right text-white text-center bg-blue">
+                    <div class = "contact-head">
+                        <h3 class = "lead">Contact Us</h3>
+                        <p class = "text text-md">Have questions? We're here to help—reach out anytime!</p>
+                    </div>
+                    <form>
+                        <div class = "form-element">
+                            <input type = "text" class = "form-control" placeholder="Your name">
+                        </div>
+                        <div class = "form-element">
+                            <input type = "email" class = "form-control" placeholder="Your email">
+                        </div>
+                        <div class = "form-element">
+                            <textarea rows = "5" placeholder="Your Message" class = "form-control"></textarea>
+                        </div>
+                        <button type = "submit" class = "btn btn-white btn-submit">
+                            <i class = "fas fa-arrow-right"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+    </main>
+
+    <!-- footer  -->
+    <footer id = "footer" class = "footer text-center">
+        <div class = "container">
+            <div class = "footer-inner text-white py grid">
+                <div class = "footer-item">
+                    <h3 class = "footer-head">about us</h3>
+                    <div class = "icon">
+                        <img src = "">
+                    </div>
+                    <p class = "text text-md">Meditrack is more than a service—it’s a commitment to your health. We ensure timely, reliable medicine deliveries, so you never have to worry about missing a dose!</p>
+                    <ul>
+                        <h3 class="footer-head"></h3>
+                        <li>Order Medicine</li>
+                        <li>HealthCare Products</li>
+                        <li>Health Blog</li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">tags</h3>
+                    <ul class = "tags-list flex">
+                        <li>COVID Essentials</li>
+                        <li>Personal Care</li>
+                        <li>Health Food & Drinks</li>
+                        <li>Supplements</li>
+                        <li>Mother & Baby Care</li>
+                        <li>Home Care</li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Quick Links</h3>
+                    <ul>
+                        <li><a href = "#" class = "text-white">Our Services</a></li>
+                        <li><a href = "#" class = "text-white">Our Plan</a></li>
+                        <li><a href = "#" class = "text-white">Privacy Policy</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h3 class = "footer-head">Make your first Order</h3>
+                    <p class = "text text-md">Customer Support Here for You.</p>
+                    <ul class = "appointment-info">
+                        <li>8:00 AM - 11:00 AM</li>
+                        <li>2:00 PM - 05:00 PM</li>
+                        <li>8:00 PM - 11:00 PM</li>
+                        <li>
+                            <i class = "fas fa-envelope"></i>
+                            <span>meditrack@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class = "fas fa-phone"></i>
+                            <span>+02 2411-5401</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "footer-links">
+                <ul class = "flex">
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-facebook-f"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-twitter"></i></a></li>
+                    <li><a href = "#" class = "text-white flex"> <i class = "fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer  -->
+
+
+    <!-- custom js -->
+    <script src = "src/assets/js/script.js"></script>
+</body>
+</html>
